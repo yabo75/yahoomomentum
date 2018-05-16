@@ -1,0 +1,218 @@
+@font-face {
+    font-family: "yahoo";
+    src: url(../fonts/yahoo.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: primary;
+    src: url(assets/fonts/mplus-black.ttf);
+}
+
+html {
+ height: 100%;
+ border: 0;
+}
+
+body {
+ height: 100%;
+ margin: 0px;
+}
+
+td:first-child {
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: left;
+    border-left: 0;
+
+}
+
+td:last-child {
+    padding-left: 10px;
+    text-align: left;
+}
+
+td {
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: left;
+    border-left: solid 1px white
+
+}
+
+.container {
+
+  display: grid;
+  grid-template-columns: 52.5px auto 100px 40px;
+  grid-template-rows: 52.5px 40px 82.5px 70px auto;
+  height: 100%;
+  border: 0;
+}
+
+/*.leftpane{
+  grid-row: 1 / -1;
+  grid-column: 1 / 2;
+  background-color: #0e0e0e;
+
+
+} */
+
+.yahoo{
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+  font-family: "yahoo";
+  background-color: #660066;
+  font-size: 10px;
+  text-align: center;
+  color: white;
+}
+
+.exclamation {
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+  font-size: 11px;
+  color: white;
+}
+
+.searchbox{
+  z-index: 2;
+  grid-row: 1 / 2;
+  grid-column: 2 / -1;
+  font-family: Montserrat;
+  color: grey;
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+
+.nachosearch{
+  z-index: 4;
+  grid-row: 1 / 2;
+  grid-column: 2 / -1;
+  border-color: white;
+  border: none;
+  float:left;
+  border-width: 0;
+  width: 80%;
+  padding: 0px;
+  height: 52.5px;
+  box-shadow: none;
+  text-indent: 17px;
+  font-size:  30px;
+  text-align: left;
+  display: table-cell;
+  vertical-align: middle;
+
+}
+
+.nacho {
+  grid-row: 1 / 2;
+  grid-column: 3 / 5;
+  height: 100%;
+  width: 100%;
+}
+
+
+.nachopic{
+  grid-row: 1 / 2;
+  grid-column: 3 / 5;
+  z-index: auto;
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+ .hola{
+   grid-row: 1 / 2;
+   grid-column: 3 / 5;
+   z-index: auto;
+   font-family: Montserrat;
+   font-size: 11px;
+   font-weight: bold;
+   text-align: right;
+   height: 100%;
+   width: 100%;
+   display: table-cell;
+   vertical-align: middle;
+ }
+
+.input_img {
+    grid-row: 1 / 2;
+    grid-column: 3 / 5;
+    padding: 7.25px;
+    float:right;
+    width:38px;
+    height:38px;
+
+}
+
+
+.info{
+  z-index: 2;
+  grid-row: 2 / 3;
+  grid-column: 1 / -1;
+  border-bottom-style: solid;
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+  border-bottom-width: 1px;
+}
+
+.infotextarea{
+  z-index: 3;
+  grid-row: 2 / 3;
+  grid-column: 2 / 4;
+  display: table;
+  height: 100%;
+  width: 100%;
+  width: auto;
+  margin-right: 0px;
+  margin-left: auto;
+}
+
+.infotext{
+  z-index: 4;
+  grid-row: 2 / 3;
+  grid-column: 2 / 4;
+  color: white;
+  font-family: Montserrat;
+  font-size: 10px;
+  font-weight: bold;
+  text-align: right;
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+
+}
+
+.intro{
+  font-family: Montserrat;
+  z-index: 2;
+  grid-row: 4 / 5;
+  grid-column: 1 / -1;
+  color: white;
+  letter-spacing: -3px;
+  font-size:  62.5px;
+  text-align: center;
+  font-weight: lighter;
+
+}
+
+.mainarea{
+  z-index: 1;
+  grid-row: 2 / -1;
+  grid-column: 1 / -1;
+  font-family: Montserrat;
+  color: white;
+  font-size:  20px;
+  text-align: center;
+  background-image: url("../img/santamonica.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+
+}
+
+
+/* .rightpane{
+  grid-row: 1 / -1;
+  grid-column: 5 / 6;
+  background-color: #0e0e0e;
+
+
+} */
